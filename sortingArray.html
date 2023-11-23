@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Array in Descending Order</title>
+</head>
+<body>
+    <script>
+        function sortDescending() {
+            const originalArray = [5, 2, 8, 1, 6, 3, 7, 4];
+            
+            // Use a custom comparison function for descending order
+            const sortedArray = originalArray.sort(function(a, b) {
+                return b - a;
+            });
+
+            console.log("Original Array:", originalArray);
+            console.log("Sorted Array (Descending):", sortedArray);
+        }
+
+        // Call the function
+        sortDescending();
+    </script>
+</body>
+</html>
